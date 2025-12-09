@@ -72,32 +72,5 @@ RSA刷题1
       
     </item>
     
-    
-
-    <item>
-      <title>ISCTF2025 Write UP</title>
-      <link>https://example.org/post/isctf2025writeup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
-      <author>xxx@example.com (Winston-Charles-Franklin)</author>
-      <guid>https://example.org/post/isctf2025writeup/</guid>
-      <description>
-        <![CDATA[<h1>ISCTF2025 Write UP</h1><p>作者：Winston-Charles-Franklin（xxx@example.com）</p>
-        
-          <h1 id="isctf2025wp">
-<a class="header-anchor" href="#isctf2025wp"></a>
-ISCTF2025WP
-</h1><h2 id="web">
-<a class="header-anchor" href="#web"></a>
-Web
-</h2><h3 id="bby-n0t1ce-b0ard">
-<a class="header-anchor" href="#bby-n0t1ce-b0ard"></a>
-b@by n0t1ce b0ard
-</h3><p>题目中提到CVE-2024-12233,是code-projects Online Notice Board（版本 ≤ 1.0）中的一个文件上传漏洞，打开靶机，是Online Notice Board首页，点sign up注册，传头像的地方就是该漏洞的点根据源码可知头像会上传到/images/$e(你填的邮箱地址),</p>
-        
-        <hr><p>本文0001-01-01首发于<a href='https://example.org/'>Winston-Charles-Franklin's Blog</a>，最后修改于0001-01-01</p>]]>
-      </description>
-      
-    </item>
-    
   </channel>
 </rss>

@@ -10,10 +10,4 @@
     "permalink": "/post/hello/",
     "title": "Hello World","content": "大家好！\n","date": "2025-11-15 23:00:00",
     "updated": "2025-11-15 23:00:00"
-  }, 
-  {
-    "objectID": "9bdbed94ae056c2be81428e38c6cb9aa48085754",
-    "permalink": "/post/isctf2025writeup/",
-    "title": "ISCTF2025 Write UP","content": " ISCTF2025WP Web b@by n0t1ce b0ard 题目中提到CVE-2024-12233,是code-projects Online Notice Board（版本 ≤ 1.0）中的一个文件上传漏洞，打开靶机，是Online Notice Board首页，点sign up注册，传头像的地方就是该漏洞的点根据源码可知头像会上传到/images/$e(你填的邮箱地址),\n//upload image mkdir(\u0026amp;#34;images/$e\u0026amp;#34;); move_uploaded_file($_FILES[\u0026amp;#39;img\u0026amp;#39;][\u0026amp;#39;tmp_name\u0026amp;#39;],\u0026amp;#34;images/$e/\u0026amp;#34;.$_FILES[\u0026amp;#39;img\u0026amp;#39;][\u0026amp;#39;name\u0026amp;#39;]); 上传一个webshell:\n\u0026amp;lt;?php phpinfo(); ?\u0026amp;gt; 访问后在phpinfo的Environment里得到flag。\n难过的bottle 一个在线解压器，上传后会显示解压的文件，访问后内容会被template渲染存在ssti,\ntry: return template(content) except Exception as e: return f\u0026amp;#34;渲染错误: {str(e)}\u0026amp;#34; 但是黑名单过滤了很多字符，但是’/’,’a’’f’,’g’,’l’没有过滤，可能用到/flag，试了直接用八进制编码，但是会原样输出。这里还会用latin-1编码来读取文件，考虑全角字符来绕过，\ntry: with open(file_path, \u0026amp;#39;r\u0026amp;#39;, encoding=\u0026amp;#39;utf-8\u0026amp;#39;) as f: content = f.read() except: try: with open(file_path, \u0026amp;#39;r\u0026amp;#39;, encoding=\u0026amp;#39;latin-1\u0026amp;#39;) as f: content = f.read() except: return \u0026amp;#34;无法读取文件内容（可能是二进制文件）\u0026amp;#34; 这里中括号里也用半角会提示渲染错误，所以改用八进制编码，在中括号里可以正常用，文件就是没有过滤的/flag.\npayload =\u0026amp;#34;{{ …","date": "0001-01-01 00:00:00",
-    "updated": "0001-01-01 00:00:00"
   }]
