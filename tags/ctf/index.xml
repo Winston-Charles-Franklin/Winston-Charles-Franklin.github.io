@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CTF on Winston-Charles-Franklin&#39;s Blog</title>
-    <link>https://example.org/tags/ctf/</link>
+    <link>http://localhost:1313/tags/ctf/</link>
     <description>Recent content from Winston-Charles-Franklin&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
@@ -12,10 +12,10 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Tue, 09 Dec 2025 23:09:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 10 Dec 2025 23:20:00 +0800</lastBuildDate>
     
     
-    <atom:link href="https://example.org/tags/ctf/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/tags/ctf/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -23,10 +23,10 @@
 
     <item>
       <title>ISCTF2025 Write UP</title>
-      <link>https://example.org/post/isctf2025writeup/</link>
+      <link>http://localhost:1313/post/isctf2025writeup/</link>
       <pubDate>Tue, 09 Dec 2025 23:09:00 &#43;0800</pubDate>
       <author>xxx@example.com (Winston-Charles-Franklin)</author>
-      <guid>https://example.org/post/isctf2025writeup/</guid>
+      <guid>http://localhost:1313/post/isctf2025writeup/</guid>
       <description>
         <![CDATA[<h1>ISCTF2025 Write UP</h1><p>作者：Winston-Charles-Franklin（xxx@example.com）</p>
         
@@ -41,7 +41,7 @@ Web
 b@by n0t1ce b0ard
 </h3><p>题目中提到CVE-2024-12233,是code-projects Online Notice Board（版本 ≤ 1.0）中的一个文件上传漏洞，打开靶机，是Online Notice Board首页，点sign up注册，传头像的地方就是该漏洞的点根据源码可知头像会上传到/images/$e(你填的邮箱地址),</p>
         
-        <hr><p>本文2025-12-09首发于<a href='https://example.org/'>Winston-Charles-Franklin's Blog</a>，最后修改于2025-12-09</p>]]>
+        <hr><p>本文2025-12-09首发于<a href='http://localhost:1313/'>Winston-Charles-Franklin's Blog</a>，最后修改于2025-12-10</p>]]>
       </description>
       
     </item>
