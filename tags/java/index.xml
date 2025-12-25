@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Winston-Charles-Franklin&#39;s Blog</title>
+    <link>https://example.org/tags/java/</link>
+    <description>Recent content from Winston-Charles-Franklin&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    
+    <managingEditor>xxx@example.com (Winston-Charles-Franklin)</managingEditor>
+    <webMaster>xxx@example.com (Winston-Charles-Franklin)</webMaster>
+    
+    <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
+    
+    <lastBuildDate>Thu, 25 Dec 2025 20:17:00 +0800</lastBuildDate>
+    
+    
+    <atom:link href="https://example.org/tags/java/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Java文件读写</title>
+      <link>https://example.org/post/java_file_io/</link>
+      <pubDate>Thu, 25 Dec 2025 20:17:00 &#43;0800</pubDate>
+      <author>xxx@example.com (Winston-Charles-Franklin)</author>
+      <guid>https://example.org/post/java_file_io/</guid>
+      <description>
+        <![CDATA[<h1>Java文件读写</h1><p>作者：Winston-Charles-Franklin（xxx@example.com）</p>
+        
+          <h1 id="java文件读写">
+<a class="header-anchor" href="#java%e6%96%87%e4%bb%b6%e8%af%bb%e5%86%99"></a>
+Java文件读写
+</h1><h2 id="java-io流继承关系">
+<a class="header-anchor" href="#java-io%e6%b5%81%e7%bb%a7%e6%89%bf%e5%85%b3%e7%b3%bb"></a>
+Java io流继承关系:
+</h2><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// 输入字节流
+</span></span><span class="line"><span class="cl">InputStream
+</span></span><span class="line"><span class="cl">├── FileInputStream // 从文件中读取字节
+</span></span><span class="line"><span class="cl">├── ByteArrayInputStream // 从字节数组中读取
+</span></span><span class="line"><span class="cl">├── ObjectInputStream // 反序列化对象
+</span></span><span class="line"><span class="cl">├── PipedInputStream // 管道流，用于线程间通信
+</span></span><span class="line"><span class="cl">└── FilterInputStream // 装饰流的基类
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 输出字节流
+</span></span><span class="line"><span class="cl">OutputStream
+</span></span><span class="line"><span class="cl">├── FileOutputStream // 写入字节到文件
+</span></span><span class="line"><span class="cl">├── ByteArrayOutputStream // 写入字节到字节数组
+</span></span><span class="line"><span class="cl">├── ObjectOutputStream // 序列化对象
+</span></span><span class="line"><span class="cl">├── PipedOutputStream // 管道流，用于线程间通信
+</span></span><span class="line"><span class="cl">└── FilterOutputStream // 装饰流的基类
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 输入字符流
+</span></span><span class="line"><span class="cl">Reader
+</span></span><span class="line"><span class="cl">├── FileReader // 从文件中读取字符
+</span></span><span class="line"><span class="cl">├── BufferedReader // 带缓冲的字符输入流
+</span></span><span class="line"><span class="cl">├── InputStreamReader // 将字节流转换为字符流
+</span></span><span class="line"><span class="cl">└── StringReader // 从字符串中读取
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 输出字符流
+</span></span><span class="line"><span class="cl">Writer
+</span></span><span class="line"><span class="cl">├── FileWriter // 写入字符到文件
+</span></span><span class="line"><span class="cl">├── BufferedWriter // 带缓冲的字符输出流
+</span></span><span class="line"><span class="cl">├── OutputStreamWriter // 将字符流转换为字节流
+</span></span><span class="line"><span class="cl">└── StringWriter // 写入字符到字符串
+</span></span></code></pre></div><h2 id="文件读取">
+<a class="header-anchor" href="#%e6%96%87%e4%bb%b6%e8%af%bb%e5%8f%96"></a>
+文件读取
+</h2><p>InputStream方法:</p>
+        
+        <hr><p>本文2025-12-25首发于<a href='https://example.org/'>Winston-Charles-Franklin's Blog</a>，最后修改于2025-12-25</p>]]>
+      </description>
+      
+    </item>
+    
+  </channel>
+</rss>
