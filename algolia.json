@@ -1,5 +1,11 @@
 [
   {
+    "objectID": "56d0fa065fba5751e618661c37ee0700d5ac66c9",
+    "permalink": "/post/2025yes/",
+    "title": "2025年终总结","content": " 2025年终总结 恭喜又活一年\n漫长的一年过去了，那个男人又要解冻了。\n这一年感觉做了好多，学了好多，但是又感觉还有好多东西要学。\n来康康今年都干了啥。\n回顾2025 上半年开始，也就是大一上结束前一个月左右开始入web安全,起步较晚，没有进网安协会，也没打算打大比赛，自己摸，有点绕，还是学了点东西。\n刷了好多网安题目，也打了一些小型线上比赛，巩固一下基础，算法题大一下就少刷了，大二上更是没怎么碰，有时间还是写写比较好。\npython真好玩~\n大一的成绩拿了个校三等奖学金，还得努力。\n开始尝试搭建blog,目前一些配置还在完善中。\n关于摄影，今年出去得少，也就拍得少。\n尝试剪视频，感觉有许多提升空间，剪的频率少主要是需要时间攒素材，而且导素材时比较麻烦，特别是如果素材长的话。\n2026要做什么 继续学web，最近发现参考别人blog里好多没碰过的知识点，刚好补齐一下之前遗漏的知识，拓展一下新知识。\n想开密码学，但是目前除了RSA其他方面还不是很了解，看书里前面的密码分析也比较复杂，需要时间消化。\n开Java。\n开Tensorflow。\n多出去拍点照，不然感觉要退化了。\n再剪几支视频，下一个视频应该快出来了（新建文件夹）。\n找时间考考NISP。\n有时候学到一定程度会感到有些迷茫，不知道后面从哪下手，于是尝试休息一下，想想之前的遗漏，也是时候补一补之前没有遗留的问题了。\n上大学后才感受到该学学该玩玩带来的好处，高中里的同学好多玩的比你舒服考的还比你好的，也许自己也早该如此，又到期末，该开始划水了~\n","date": "2025-12-30 20:10:00",
+    "updated": "2025-12-30 20:10:00"
+  }, 
+  {
     "objectID": "889ed3ede3ab4e2bb0956f405028f5e37c78b5c0",
     "permalink": "/post/java_file_io/",
     "title": "Java文件读写","content": " Java文件读写 Java io流继承关系: // 输入字节流 InputStream ├── FileInputStream // 从文件中读取字节 ├── ByteArrayInputStream // 从字节数组中读取 ├── ObjectInputStream // 反序列化对象 ├── PipedInputStream // 管道流，用于线程间通信 └── FilterInputStream // 装饰流的基类 // 输出字节流 OutputStream ├── FileOutputStream // 写入字节到文件 ├── ByteArrayOutputStream // 写入字节到字节数组 ├── ObjectOutputStream // 序列化对象 ├── PipedOutputStream // 管道流，用于线程间通信 └── FilterOutputStream // 装饰流的基类 // 输入字符流 Reader ├── FileReader // 从文件中读取字符 ├── BufferedReader // 带缓冲的字符输入流 ├── InputStreamReader // 将字节流转换为字符流 └── StringReader // 从字符串中读取 // 输出字符流 Writer ├── FileWriter // 写入字符到文件 ├── BufferedWriter // 带缓冲的字符输出流 ├── OutputStreamWriter // 将字符流转换为字节流 └── StringWriter // 写入字符到字符串 文件读取 InputStream方法:\nint read() 读取一个字节的数据，返回值为 0 到 255 之间的整数。如果到达流的末尾，返回 -1。\tint data = inputStream.read();\nint read(byte[] b) 从输入流中读取字节，并将其存储在字节数组 b 中，返回实际读取的字节数。如果到达流的末尾，返回 -1。\tbyte[] buffer = new byte[1024]; int bytesRead = inputStream.read(buffer);\nint read(byte[] b, int off, int len)\t从输入流中读取最多 len 个字节，并将它们存 …","date": "2025-12-25 20:17:00",

@@ -46,7 +46,7 @@
   top: calc(50% + 110px);
   left: 50%;
   transform: translate(-50%, -50%);
-  font: 700 1.2rem "%!s(<nil>)", "LXGW WenKai", "行楷", "Caveat", "Mulish", "Noto Serif SC", "宋体", "Caveat", "-apple-system", "PingFang SC", "Microsoft YaHei", "sans-serif";
+  font: 700 1.2rem "%!s(<nil>)", "LXGW WenKai", "楷体", "Caveat", "Mulish", "Noto Serif SC", "宋体", "Caveat", "-apple-system", "PingFang SC", "Microsoft YaHei", "sans-serif";
 }
 
 #loader.loading .loading-left-bg {
