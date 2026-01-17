@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Java on Winston-Charles-Franklin&#39;s Blog</title>
+    <title>Java on Le blog de Winston-Charles-Franklin</title>
     <link>https://example.org/tags/java/</link>
-    <description>Recent content from Winston-Charles-Franklin&#39;s Blog</description>
+    <description>Recent content from Le blog de Winston-Charles-Franklin</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     
@@ -70,7 +70,7 @@ Java io流继承关系:
 文件读取
 </h2><p>InputStream方法:</p>
         
-        <hr><p>本文2025-12-25首发于<a href='https://example.org/'>Winston-Charles-Franklin's Blog</a>，最后修改于2025-12-25</p>]]>
+        <hr><p>本文2025-12-25首发于<a href='https://example.org/'>Le blog de Winston-Charles-Franklin</a>，最后修改于2025-12-25</p>]]>
       </description>
       
         <category>学习笔记</category>

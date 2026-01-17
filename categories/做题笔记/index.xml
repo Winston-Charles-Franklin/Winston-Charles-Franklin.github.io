@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>做题笔记 on Winston-Charles-Franklin&#39;s Blog</title>
+    <title>做题笔记 on Le blog de Winston-Charles-Franklin</title>
     <link>https://example.org/categories/%E5%81%9A%E9%A2%98%E7%AC%94%E8%AE%B0/</link>
-    <description>Recent content from Winston-Charles-Franklin&#39;s Blog</description>
+    <description>Recent content from Le blog de Winston-Charles-Franklin</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     
@@ -41,7 +41,7 @@ Web
 b@by n0t1ce b0ard
 </h3><p>题目中提到CVE-2024-12233,是code-projects Online Notice Board（版本 ≤ 1.0）中的一个文件上传漏洞，打开靶机，是Online Notice Board首页，点sign up注册，传头像的地方就是该漏洞的点根据源码可知头像会上传到/images/$e(你填的邮箱地址),</p>
         
-        <hr><p>本文2025-12-09首发于<a href='https://example.org/'>Winston-Charles-Franklin's Blog</a>，最后修改于2025-12-11</p>]]>
+        <hr><p>本文2025-12-09首发于<a href='https://example.org/'>Le blog de Winston-Charles-Franklin</a>，最后修改于2025-12-11</p>]]>
       </description>
       
         <category>做题笔记</category>
